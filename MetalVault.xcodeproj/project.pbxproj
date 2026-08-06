@@ -20,6 +20,11 @@
 		60AB1E000000000000000017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AB1E00000000000000000B /* Assets.xcassets */; };
 		60AB1E00000000000000002A /* Metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1E000000000000000029 /* Metal.swift */; };
 		60AB1E00000000000000002C /* VaultTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1E00000000000000002B /* VaultTransfer.swift */; };
+		60AB1E000000000000000032 /* AlertDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1E00000000000000002D /* AlertDirection.swift */; };
+		60AB1E000000000000000033 /* PriceAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1E00000000000000002E /* PriceAlert.swift */; };
+		60AB1E000000000000000034 /* PriceAlertStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1E00000000000000002F /* PriceAlertStore.swift */; };
+		60AB1E000000000000000035 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1E000000000000000030 /* AlertsView.swift */; };
+		60AB1E000000000000000036 /* AddAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB1E000000000000000031 /* AddAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		60AB1E00000000000000000C /* MetalVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AB1E000000000000000029 /* Metal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metal.swift; sourceTree = "<group>"; };
 		60AB1E00000000000000002B /* VaultTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultTransfer.swift; sourceTree = "<group>"; };
+		60AB1E00000000000000002D /* AlertDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDirection.swift; sourceTree = "<group>"; };
+		60AB1E00000000000000002E /* PriceAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceAlert.swift; sourceTree = "<group>"; };
+		60AB1E00000000000000002F /* PriceAlertStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceAlertStore.swift; sourceTree = "<group>"; };
+		60AB1E000000000000000030 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		60AB1E000000000000000031 /* AddAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,8 @@
 				60AB1E000000000000000002 /* GoldLot.swift */,
 				60AB1E000000000000000003 /* WeightUnit.swift */,
 				60AB1E000000000000000029 /* Metal.swift */,
+				60AB1E00000000000000002D /* AlertDirection.swift */,
+				60AB1E00000000000000002E /* PriceAlert.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -78,6 +90,7 @@
 			children = (
 				60AB1E000000000000000004 /* GoldPriceService.swift */,
 				60AB1E000000000000000005 /* VaultStore.swift */,
+				60AB1E00000000000000002F /* PriceAlertStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -98,6 +111,8 @@
 				60AB1E000000000000000008 /* ContentView.swift */,
 				60AB1E000000000000000009 /* LotRowView.swift */,
 				60AB1E00000000000000000A /* SummaryCardView.swift */,
+				60AB1E000000000000000030 /* AlertsView.swift */,
+				60AB1E000000000000000031 /* AddAlertView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +206,11 @@
 				60AB1E000000000000000016 /* SummaryCardView.swift in Sources */,
 				60AB1E00000000000000002A /* Metal.swift in Sources */,
 				60AB1E00000000000000002C /* VaultTransfer.swift in Sources */,
+				60AB1E000000000000000032 /* AlertDirection.swift in Sources */,
+				60AB1E000000000000000033 /* PriceAlert.swift in Sources */,
+				60AB1E000000000000000034 /* PriceAlertStore.swift in Sources */,
+				60AB1E000000000000000035 /* AlertsView.swift in Sources */,
+				60AB1E000000000000000036 /* AddAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bullion Ledger";
@@ -339,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomnishihira.MetalVault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -354,7 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bullion Ledger";
@@ -367,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomnishihira.MetalVault;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

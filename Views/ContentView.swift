@@ -123,6 +123,13 @@ struct ContentView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        AlertsView()
+                    } label: {
+                        Image(systemName: "bell")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Menu {
                         Button {
                             exportDocument = VaultExportDocument(lots: vaultStore.lots)
